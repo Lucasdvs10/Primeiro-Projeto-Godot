@@ -29,4 +29,4 @@ func _process(delta):
 
 
 func _on_Jogador_area_entered(area):
-	pass
+	print('faleceu')
