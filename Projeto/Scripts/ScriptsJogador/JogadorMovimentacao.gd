@@ -21,8 +21,8 @@ func _process(delta):
 	position += direcao * velocidade * delta
 	
 	#Limitar o jogador a ficar dentro da tela do jogo
-	position.x = clamp(position.x, raioPersonagem, tamanhoTela.x - raioPersonagem)
-	position.y = clamp(position.y, raioPersonagem, tamanhoTela.y - raioPersonagem)
+	position.x = clamp(position.x, 0, tamanhoTela.x - raioPersonagem)
+	position.y = clamp(position.y, 0, tamanhoTela.y - raioPersonagem)
 
 
 
